@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Filtros em CSS</title>
+  <link rel="stylesheet" href="css/global.css">
+  <style>
+    .blur {
+      filter: blur(10px);
+    }
+
+    .brightness {
+      filter: brightness(150%);
+    }
+
+    .contrast {
+      filter: contrast(20%);
+    }
+
+    .grayscale {
+      filter: grayscale(95%);
+    }
+
+    .opacity {
+      filter: opacity(30%);
+    }
+
+    .saturate {
+      filter: saturate(100%);
+    }
+
+    .sepia {
+      filter: sepia(100%);
+    }
+
+    .hueRotate {
+      filter: hue-rotate(250deg);
+    }
+
+    .dropShadow {
+      filter: drop-shadow(10px 10px 10px #000);
+      /* box-shadow: 10px 10px 10px #250; */
+    }
+
+    .brightnessContrast {
+      filter: brightness(200%) contrast(150%) hue-rotate(50deg);
+    }
+
+    .blurTransition {
+      filter: blur(20px);
+      transition: filter 0.2s;
+    }
+
+    .blurTransition:hover {
+      filter: blur(0px);
+    }
+
+    @keyframes hueRotateAnimation {
+      from {
+        filter: hue-rotate(0deg)
+      }
+
+      to {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    .hueAnimate {
+      animation: hueRotateAnimation 2s linear infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Filtros em CSS</h1>
+
+  <h2>Blur</h2>
+  <img src="img/web.png" class="blur">
+
+  <hr>
+  <h2>Brightness</h2>
+  <img src="img/web.png" class="brightness">
+
+  <hr>
+
+  <h2>Contrast</h2>
+  <img src="img/web.png" class="contrast">
+  <hr>
+
+  <h2>Grayscale</h2>
+  <img src="img/web.png" class="grayscale">
+  <hr>
+
+  <h2>Opacity</h2>
+  <img src="img/web.png" class="opacity">
+  <hr>
+
+  <h2>Saturate</h2>
+  <img src="img/web.png" class="saturate">
+  <hr>
+
+  <h2>Sepia</h2>
+  <img src="img/web.png" class="sepia">
+  <hr>
+
+  <h2>Hue rotate</h2>
+  <img src="img/web.png" class="hueRotate">
+  <hr>
+
+  <h2>DropShadow</h2>
+  <img src="img/web.png" class="dropShadow">
+  <hr>
+
+  <h2>Brightness + Contrast</h2>
+  <img src="img/web.png" class="brightnessContrast">
+  <hr>
+
+  <h2>Blur + transition</h2>
+  <img src="img/web.png" class="blurTransition">
+
+  <hr>
+
+  <h2>Hue rotate + animation</h2>
+  <img src="img/web.png" class="hueAnimate">
+
+  <hr>
+
+</body>
+
+</html>
